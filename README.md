@@ -1,4 +1,5 @@
-# Introducci-n-a-los-Ordenadores
+# Introducción-a-los-Ordenadores
+Este repositorio contiene una serie de proyectos y ejercicios desarrollados como parte del plan de estudios de la Universidad. Cada actividad sigue un enunciado técnico específico diseñado para cubrir conceptos clave de la asignatura de Introducción a los ordenadores
 # Algoritmo de Euclides (MCD) - Iterativo en RISC-V
 Implementación del algoritmo clásico de Euclides para hallar el Máximo Común Divisor (MCD) de dos números.
 
