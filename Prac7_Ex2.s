@@ -8,7 +8,7 @@ delay_count: .word 1000000
 .globl main
 
 main:
-    # Inicialització
+    # InicialitzaciÃ³
     jal init_gpio
     jal enable_all_leds
     
@@ -82,7 +82,7 @@ move_led:
     not t6, t6
     and t5, t5, t6
     
-    # Actualizar índ
+    # Actualizar Ã­nd
     add t3, t3, t1
     
     # Ajustaments pepr quan arribem als extrems dels LEDS
