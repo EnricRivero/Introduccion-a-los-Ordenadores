@@ -1,5 +1,5 @@
 .data
-display_table:  # Tabla de digits per en 7 segmentos (núm microones)
+display_table:  # Tabla de digits per en 7 segmentos (nÃºm microones)
     .word 0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F
 
 .text
@@ -18,12 +18,12 @@ loop:
     srli t2, t2, 16       # t2 = switches_value (bits 15-0)
 
     # Verificar CLEAR (switch 15)
-    li t0, 0x8000         # Máscara para switch 15 (bit 15)
+    li t0, 0x8000         # MÃ¡scara para switch 15 (bit 15)
     and t3, t2, t0
     bnez t3, clear_display
 
     # El passem a BCD 
-    li t0, 0x7FFF         # Máscara para 0-32,767 (15 bits)
+    li t0, 0x7FFF         # MÃ¡scara para 0-32,767 (15 bits)
     and t2, t2, t0        # Ignorar bit 15 (CLEAR)
 
     # Escritura en display
